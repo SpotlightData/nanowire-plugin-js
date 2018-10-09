@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});const getCurrentDateStamp=()=>{const d=new Date();return d.toISOString();};exports.default=getCurrentDateStamp;
