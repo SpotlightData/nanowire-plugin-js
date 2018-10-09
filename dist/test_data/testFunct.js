@@ -1,0 +1,1 @@
+"use strict";const testFunct=()=>true;module.exports=testFunct;
