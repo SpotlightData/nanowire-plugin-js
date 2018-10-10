@@ -1,46 +1,33 @@
 {
-  "name": "spotlight-pipeline-client",
+  "name": "nanowire-plugin-js",
   "version": "9.0.1",
   "description": "A Node.js client for Spotlight's Redis Pipeline",
-  "main": "dist/lib/index.js",
+  "main": "dist/index.js",
   "author": "Will Evans",
   "scripts": {
     "dev": "babel-node lib/index.js",
     "build": "babel --ignore node_modules,dist lib -d dist",
     "start": "node dist/index.js",
-    "test": "jest --runInBand --forceExit --verbose"
+    "test": "jest --config=jest.config.js --runInBand --verbose"
   },
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.2.6",
-    "babel-jest": "^23.4.2",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^3.1.1",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jest": "^19.0.1",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.0",
+    "@spotlightdata/node-logger": "^0.1.2",
     "fs-extra": "^4.0.2",
-    "jest": "^19.0.2",
     "minio": "^5.0.0",
     "raven": "^2.4.0",
     "request": "^2.81.0",
     "request-promise-native": "^1.0.4",
     "serialize-error": "^2.1.0",
-    "spotlight-json-logger": "@spotlightdata/node-logger",
     "tar": "^4.1.1",
     "tmp-promise": "^1.0.3",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
-    "jasmine": "^2.4.1",
-    "nodemon": "^1.11.0"
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/dist/"
-    ]
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0"
   }
 }
