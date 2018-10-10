@@ -6,10 +6,9 @@
   "author": "Will Evans",
   "scripts": {
     "dev": "babel-node lib/index.js",
-    "build": "babel --ignore node_modules,dist ./ -d dist",
-    "start": "node dist/lib/index.js",
-    "test": "./node_modules/jest/bin/jest.js --runInBand --forceExit --verbose",
-    "prepublish": "npm run build"
+    "build": "babel --ignore node_modules,dist lib -d dist",
+    "start": "node dist/index.js",
+    "test": "jest --runInBand --forceExit --verbose"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -29,7 +28,7 @@
     "request": "^2.81.0",
     "request-promise-native": "^1.0.4",
     "serialize-error": "^2.1.0",
-    "spotlight-json-logger": "git+ssh://git@bitbucket.org:spotlightdatateam/nodejs_json_logger.git#v0.1.0",
+    "spotlight-json-logger": "@spotlightdata/node-logger",
     "tar": "^4.1.1",
     "tmp-promise": "^1.0.3",
     "uuid": "^3.1.0"
