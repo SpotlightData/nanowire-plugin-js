@@ -4,7 +4,7 @@
 
 First install the dependencies with:
 
-`npm install`
+`yarn install`
 
 The following environment variables need to be set:
 
@@ -12,17 +12,16 @@ The following environment variables need to be set:
 CONTROLLER_BASE_URI
 POD_NAME
 PLUGIN_ID
-``` 
+```
 
 Then the library can be built with:
 
-`npm run build`
+`yarn build`
 
 ## Usage
 
-`import SpotlightPipeline from 'spotlight-pipeline-client'`
-
 ```javascript
+import SpotlightPipeline from '@spotlightdata/nanowire-plugin-js';
 import { name as pluginName } from '../package.json';
 
 const processMessage = async (nmo, jsonld, url) => {
