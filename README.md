@@ -1,5 +1,7 @@
 # Node.js Nanowire Library
 
+[![Build Status](https://travis-ci.com/SpotlightData/nanowire-plugin-js.svg?branch=master)](https://travis-ci.com/SpotlightData/nanowire-plugin-js)
+
 This is a node.js library which provides a wrapper around Nanowire's controller service. It allows the user to easily fetch and process tasks from Nanowire's pipeline. If you are starting a new project from scratch it is recommended that you use the [Nanowire Python Skeleton Plugin](https://github.com/SpotlightData/nanowire-python-plugin-skeleton) as the basis for your plugin as it is already set up and ready to use.
 
 ## Details on how to run
