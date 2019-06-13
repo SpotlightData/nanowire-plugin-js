@@ -9,18 +9,13 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "babel-node lib/index.js",
-    "build": "babel --ignore node_modules,dist lib -d dist",
-    "start": "node dist/index.js",
+    "build": "rollup -c",
     "test": "jest --config=jest.config.js --runInBand --verbose"
   },
   "dependencies": {
     "@spotlightdata/node-logger": "^0.1.2",
     "fs-extra": "^4.0.2",
     "minio": "^5.0.0",
-    "raven": "^2.4.0",
-    "request": "^2.81.0",
-    "request-promise-native": "^1.0.4",
     "serialize-error": "^2.1.0",
     "tar": "^4.1.1",
     "tmp-promise": "^1.0.3",
@@ -29,6 +24,8 @@
   "devDependencies": {
     "jest": "^23.6.0",
     "rollup": "^1.15.2",
-    "rollup-plugin-typescript": "^1.0.1"
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^3.5.1"
   }
 }
