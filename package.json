@@ -1,6 +1,6 @@
 {
   "name": "@spotlightdata/nanowire-plugin-js",
-  "version": "9.0.5",
+  "version": "10.0.0",
   "description": "A Node.js client for Spotlight's Redis Pipeline",
   "main": "dist/index.js",
   "author": "Will Evans",
@@ -27,11 +27,8 @@
     "uuid": "^3.1.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.6",
-    "babel-jest": "^23.4.2",
-    "babel-preset-env": "^1.7.0",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "rollup": "^1.15.2",
+    "rollup-plugin-typescript": "^1.0.1"
   }
 }
